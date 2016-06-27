@@ -13,6 +13,8 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}else{
-		fmt.Println(emojis)
+		for _,emoji := range emojis{
+			fmt.Println(emoji.Text, ":", emoji.Score)
+		}
 	}
 }
